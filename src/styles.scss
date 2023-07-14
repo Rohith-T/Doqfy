@@ -1,0 +1,27 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
+
+$primary-color:#5b0c5b;
+$font-weight-bold: 600;
+
+
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+}
+.fw-bold{
+    font-weight: $font-weight-bold;
+  }
+  .fl-right{
+    float: right;
+  }
+  .primary-color{
+    color: $primary-color;
+  }
+  .fs-12{
+    font-size: 12px;
+  }
+  .card-text{
+    background-color: #eee;
+  }

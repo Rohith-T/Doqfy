@@ -1,0 +1,15 @@
+<div class="card p-3 mt-4">
+    <div class="card-header fw-bold">
+     Pending Actions
+    </div>
+    <div class="card-body">
+      <div *ngFor="let item of items" class="card mt-3">
+        <div class="card-body">
+          <h5 class="card-title">{{ item.title }}
+            <span class="card-text fl-right fs-12">{{ item.description }}</span>
+          </h5>
+          <p class="fs-12">{{item.action}}</p>
+        </div>
+      </div>
+    </div>
+  </div>

@@ -17,6 +17,7 @@ import { NgCircleProgressModule } from 'ng-circle-progress';
 import { OrdersComponent } from './pages/orders/orders.component';
 import { CountComponent } from './pages/count/count.component';
 import { ChartComponent } from './pages/chart/chart.component';
+import { HomeComponent } from './pages/home/home.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { ChartComponent } from './pages/chart/chart.component';
     FrequentComponent,
     OrdersComponent,
     CountComponent,
-    ChartComponent
+    ChartComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,

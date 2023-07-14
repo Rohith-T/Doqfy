@@ -1,0 +1,34 @@
+
+@import "../../../styles.scss";
+
+ .main-container{
+    background-color: #eee;
+    height:100%;
+    margin-top: 65px;
+ }
+
+ .fw-bold{
+    font-weight: $font-weight-bold;
+  }
+  .fl-right{
+    float: right;
+  }
+  .primary-color{
+    color: $primary-color;
+  }
+  .fs-12{
+    font-size: 12px;
+  }
+  .card-text{
+    background-color: #eee;
+  }
+  .custom-form-field{
+    height: 62px !important;
+    width: 100%;
+  }
+  
+
+  
+  
+  
+  

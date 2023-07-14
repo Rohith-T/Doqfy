@@ -1,8 +1,18 @@
+<!-- header starts -->
+
 <header>
   <app-header></app-header>
 </header>
+
+<!-- header ends -->
+
+<!-- main container starts -->
+
 <div class="container-fluid mb-3 main-container">
   <div class="row">
+
+    <!-- left side container -->
+
     <div class="left-container col-md-4">
       <div class="card p-3 mt-4">
         <div class="card-body">
@@ -18,7 +28,7 @@
             <span class="fl-right"><i class="fa-solid fa-wallet primary-color"></i></span>
           </h6>
 
-          <h3 class="fw-bold"><i class="fas fa-rupee-sign"></i> 25000</h3>
+          <h3 class="fw-bold"><i class="fas fa-rupee-sign"></i>{{walletBalance}}</h3>
           <p>current Balance</p>
           <p>
             Running low <a href="" class="primary-color">Click here</a> to add
@@ -28,10 +38,33 @@
       </div>
 
       <app-pending-actions></app-pending-actions>
+
     </div>
 
+    <!-- left side container ends -->
+
+    <!-- right container starts -->
+
     <div class="right-container col-md-8">
-      <app-frequent></app-frequent>
+      <div class="card p-3 mt-4">
+        <div class="card-body">
+          <h6 class="fw-bold">Frequently used</h6>
+          <div class="row">
+            <div class="col-md-12">
+              <div class="d-flex justify-content-start row">
+                <ng-container *ngFor="let item of freqData">
+                  <div class="col-md-4 col-12 mt-2">
+                    <app-frequent
+                      [title]="item.title"
+                      [description]="item.description"
+                    ></app-frequent>
+                  </div>
+                </ng-container>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
       <div class="row mt-2">
         <div class="col-md-4 col-sm-4 col-12 mt-2">
@@ -99,5 +132,10 @@
         </div>
       </div>
     </div>
+
+    <!-- right container ends -->
   </div>
+
 </div>
+
+<!-- main container ends -->

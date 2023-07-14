@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { orders } from '../app/pages/common/order.model';
 import { counts } from '../app/pages/common/count.model';
+import { freqData } from './pages/common/frequent.model';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -9,6 +10,7 @@ import { counts } from '../app/pages/common/count.model';
 export class AppComponent implements OnInit{
   userName:string = 'Michael';
   currentDate:Date = new Date();
+  walletBalance:number = 25000;
   items:any
   selectedDate: Date = new Date();
   branches:Array<string> = [
@@ -50,6 +52,7 @@ export class AppComponent implements OnInit{
 
   orders = orders;
   counts = counts;
+  freqData = freqData
   ngOnInit(): void {
   
     this.items = [
